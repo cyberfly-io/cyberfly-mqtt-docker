@@ -10,9 +10,6 @@ EXPOSE 9001
 WORKDIR /etc/mosquitto/
 
 ADD mosquitto.conf /etc/mosquitto/
-ADD cert.pem /etc/mosquitto/certs/
-ADD fullchain.pem /etc/mosquitto/certs/
-ADD privkey.pem /etc/mosquitto/certs/
 
 ENV PATH /usr/sbin:$PATH
 
